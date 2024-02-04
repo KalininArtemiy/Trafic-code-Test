@@ -75,7 +75,7 @@ import java.util.Set;
             return new Question(Body, correct_answer, answer_variants);
         }
     }
-    public static void showQuestion (Question question) {
+    public static void showMasterQuestion (Question question) {
         System.out.println();
         System.out.println();
         System.out.println("Текст вопроса: " + question.Body);
@@ -83,7 +83,12 @@ import java.util.Set;
         System.out.println("Варианты ответов: " + question.answer_variants);
         System.out.println();
         System.out.println("Правильный ответ: " + question.correct_answer);
-  
-
+    }
+    public static void showQuestion (Question question) {
+        System.out.println();
+        System.out.println();
+        System.out.println("Текст вопроса: " + question.Body);
+        System.out.println();
+        System.out.println("Варианты ответов: " + question.answer_variants);
     }
 }
